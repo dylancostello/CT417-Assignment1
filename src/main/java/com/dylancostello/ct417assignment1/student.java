@@ -5,6 +5,7 @@
  */
 package com.dylancostello.ct417assignment1;
 
+import java.util.ArrayList;
 import org.joda.time.DateTime;
 
 /**
@@ -17,13 +18,15 @@ public class student {
     private DateTime dob;
     private String id;
     private String username;
+    private ArrayList<module> modules;
     
     
-   public student(String name, int age, DateTime dob, String id){
+   public student(String name, int age, DateTime dob, String id, ArrayList modules){
        this.name=name;
        this.age=age;
        this.dob=dob;
        this.id=id;
+       this.modules=new ArrayList<>();
    }
    
    //Getter and Setter for Name
@@ -62,5 +65,10 @@ public class student {
    public String getUsername(){
        this.username=this.name+this.age;
        return username;
+   }
+   
+   //Register Student for Module
+   public void registerModule(module m){
+       modules.add(m);
    }
 }
