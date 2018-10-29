@@ -15,11 +15,13 @@ public class module {
     private String name;
     private String id;
     private ArrayList<student> students;
+    private ArrayList<course> course;
     
-    public module(String name, String id, ArrayList students){
+    public module(String name, String id, ArrayList students, ArrayList course){
         this.name=name;
         this.id=id;
         this.students=new ArrayList<>();
+        this.course=new ArrayList<>();
     }
     
     //Getter and Setter for Name
@@ -42,5 +44,20 @@ public class module {
    public void registerStudent(student s){
        students.add(s);
        s.registerModule(this);
+   }
+   
+   //Register Module to a Course
+   public void registerCourse(course c){
+       course.add(c);
+   }
+   
+   //Getter for Registered Students
+   public ArrayList getStudents(){
+       return students;
+   }
+   
+   //Getter for Courses
+   public ArrayList getCourse(){
+       return course;
    }
 }
