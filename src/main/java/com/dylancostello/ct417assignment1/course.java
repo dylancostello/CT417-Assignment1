@@ -20,7 +20,7 @@ public class course {
     private DateTime startDate;
     private DateTime endDate;
     
-    private course(String name, DateTime startDate, DateTime endDate){
+    public course(String name, DateTime startDate, DateTime endDate){
         this.name=name;
         this.modules=new ArrayList<>();
         this.students=new ArrayList<>();
