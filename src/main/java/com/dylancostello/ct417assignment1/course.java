@@ -6,6 +6,7 @@
 package com.dylancostello.ct417assignment1;
 
 import java.util.ArrayList;
+import java.util.List;
 import org.joda.time.DateTime;
 
 /**
@@ -19,7 +20,7 @@ public class course {
     private DateTime startDate;
     private DateTime endDate;
     
-    private course(String name, ArrayList modules, ArrayList students, DateTime startDate, DateTime endDate){
+    private course(String name, DateTime startDate, DateTime endDate){
         this.name=name;
         this.modules=new ArrayList<>();
         this.students=new ArrayList<>();

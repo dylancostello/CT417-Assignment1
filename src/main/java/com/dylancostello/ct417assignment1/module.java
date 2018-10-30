@@ -17,11 +17,9 @@ public class module {
     private ArrayList<student> students;
     private ArrayList<course> course;
     
-    public module(String name, String id, ArrayList students, ArrayList course){
+    public module(String name, String id){
         this.name=name;
         this.id=id;
-        this.students=new ArrayList<>();
-        this.course=new ArrayList<>();
     }
     
     //Getter and Setter for Name

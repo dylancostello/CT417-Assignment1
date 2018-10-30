@@ -22,13 +22,11 @@ public class student {
     private ArrayList<course> course;
     
     
-   public student(String name, int age, DateTime dob, String id, ArrayList modules, ArrayList course){
+   public student(String name, int age, DateTime dob, String id){
        this.name=name;
        this.age=age;
        this.dob=dob;
        this.id=id;
-       this.modules=new ArrayList<>();
-       this.course=new ArrayList<>();
    }
    
    //Getter and Setter for Name
